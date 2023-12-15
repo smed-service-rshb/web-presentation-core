@@ -1,0 +1,32 @@
+.header {
+    float: right;
+    padding: 4px 20px 4px 0;
+    width: 100%;
+}
+.header-wrapper {
+     width: 1140px;
+     margin: 0 auto;
+}
+.header-user-info {
+    color: #039035;
+    float: right;
+    font-size: 12px;
+    padding: 2px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+.header-user-info span {
+    color: #000;
+    font-size: 12px;
+    text-transform: none;
+}
+
+.header-actions-exit {
+    background: url(images/exit.png)no-repeat 100% 2px;
+    color: #039035;
+    font-size: 12.5px;
+    float: right;
+    min-height: 16px;
+    padding: 1px 21px 1px 18px;
+    width: 40px;
+}

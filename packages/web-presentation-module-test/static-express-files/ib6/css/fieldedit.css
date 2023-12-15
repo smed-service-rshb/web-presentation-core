@@ -1,0 +1,657 @@
+table.ib-fieldedit-multilingual-value {
+}
+
+div.ib-value-date {
+    position: relative;
+    width: 120px;
+}
+
+.width-period {
+    width: 172px;
+    margin-right: 31px;
+}
+
+.extract-button-erea {
+    height: 36px;
+}
+
+.extract-button-erea .ib-label-left, .extract-button-erea .ib-label-right {
+    height: 50px;
+}
+
+/*Для картинки поле дата*/
+.t-calendar-trigger {
+    position: absolute;
+
+}
+
+/*Представляем div как таблицу*/
+.ib-table-field {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.ib-table-field-retail {
+    display: table;
+    width: 95%;
+    height: 100%;
+}
+
+input:focus {
+    border: 1px solid #ffc208;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .02), 0 0 3px rgba(246, 239, 213, .8);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .05), 0 0 3px rgba(246, 239, 213, .8);
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .05), 0 0 3px rgba(246, 239, 213, .8);
+}
+
+select:focus {
+    border: 1px solid #ffc208;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .02), 0 0 3px rgba(246, 239, 213, .8);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .05), 0 0 3px rgba(246, 239, 213, .8);
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .05), 0 0 3px rgba(246, 239, 213, .8);
+}
+
+/*Input*/
+.ib-input {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.ib-field {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.ib-button {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*Конец*/
+
+.ib-value-textarea textarea {
+    min-height: 57px;
+    overflow: auto;
+}
+
+.ib-value-textarea .disabled-field {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #d9dee0;
+    border-radius: 1px;
+    box-sizing: border-box;
+    color: #222426;
+    font-family: OpenSansRegular, sans-serif;
+    font-size: 15px;
+    min-height: 57px;
+    margin: 0;
+    padding: 0 3px 0 5px;
+    text-align: left;
+    width: 100%;
+    overflow: auto;
+}
+
+/*Расскраска input*/
+.disabled-field {
+    text-align: left;
+    height: 35px;
+    padding: 0 3px 0 5px;
+    margin: 0;
+    width: 100%;
+    border: none;
+    border-radius: 1px;
+    box-sizing: border-box;
+    background: none;
+    color: #222426;
+    font-size: 15px;
+    font-family: OpenSansRegular, sans-serif;
+}
+
+.enabled-field {
+    background-color: #fff;
+    border: 1px solid #b1cde2;
+    border-radius: 1px;
+    box-sizing: border-box;
+    color: #222426;
+    font-family: OpenSansRegular, sans-serif;
+    font-size: 15px;
+    height: 36px;
+    margin: 0;
+    padding: 0 3px 0 5px;
+    text-align: left;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.selection-field {
+    position: relative;
+    box-sizing: border-box;
+    text-align: left;
+    font-family: OpenSansRegular, sans-serif;
+    font-size: 15px;
+    color: #222426;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 200px;
+    height: 40px;
+    line-height: 37px;
+    border: 1px solid #b1cde2;
+    border-radius: 1px;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 46px;
+    cursor: default;
+}
+
+.selection-field > div {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    width: 36px;
+    height: 36px;
+    background: url("../../images/corelib/fieldedit/selection-field.png") top no-repeat;
+    background-size: 36px 108px;
+    cursor: pointer;
+}
+
+.selection-field > div:hover {
+    background: url("../../images/corelib/fieldedit/selection-field.png") center no-repeat;
+    background-size: 36px 108px;
+}
+
+.selection-field > div:active {
+    background: url("../../images/corelib/fieldedit/selection-field.png") bottom no-repeat;
+    background-size: 36px 108px;
+}
+
+/*Кнопка выбора*/
+.ib-select-button {
+    width: 36px;
+    height: 36px;
+    background: url("../../images/corelib/fieldedit/selection-field.png") top no-repeat;
+    background-size: 36px 108px;
+    cursor: pointer;
+}
+
+.ib-select-button:hover {
+    background: url("../../images/corelib/fieldedit/selection-field.png") center no-repeat;
+    background-size: 36px 108px;
+}
+
+.ib-select-button:active {
+    background: url("../../images/corelib/fieldedit/selection-field.png") bottom no-repeat;
+    background-size: 36px 108px;
+}
+
+.ib-select-size {
+    display: table-cell;
+    width: 25px;
+}
+
+/*Кнопка удаления*/
+.ib-eraser-button {
+    cursor: pointer;
+    background: url("../../images/corelib/fieldedit/eraserBtn.gif") no-repeat;
+    width: 36px;
+    height: 35px;
+}
+
+.ib-eraser-size {
+    display: table-cell;
+    width: 36px;
+}
+
+/*Кнопка подбора значения*/
+.ib-lookup-button {
+    cursor: pointer;
+    background: url("../../images/corelib/fieldedit/lookup.gif") no-repeat;
+    width: 36px;
+    height: 35px;
+}
+
+.ib-lookup-size {
+    display: table-cell;
+    width: 36px;
+}
+
+/*Подпись для Input*/
+.ib-label-left, .ib-label-right {
+    height: 50px;
+    float: left;
+}
+
+.ib-deposit-label-left {
+    height: auto;
+    max-height: 50px;
+    float: left;
+}
+
+.ib-label-left {
+    margin-right: 9px;
+    text-align: right;
+}
+
+.ib-label-right {
+    text-align: left;
+    margin-right: 9px;
+}
+
+.ib-label-product-info-left {
+    text-align: left;
+}
+
+.ib-label-wide {
+    display: table-cell;
+    color: #6d7886;
+    text-align: left !important;
+    width: 400px !important;
+    padding-left: 10px !important;
+}
+.login-req-list {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.ib-label-list {
+    padding-left: 20px !important;
+    display: inline-block;
+}
+
+.ib-label-list:before {
+    content: '\2022';
+    position: relative;
+    left: -10px;
+}
+
+.ib-label-left-only-retail {
+    margin-right: 9px;
+    text-align: left;
+}
+
+.ib-label-right a {
+    color: #007b29;
+}
+
+.ib-label-right a:hover {
+    color: #019134;
+}
+
+.ib-label-left span, .ib-label-left label, .ib-label-left-only-retail, .ib-label-loan {
+    color: #6d7886;
+    font-family: OpenSansRegular, sans-serif;
+    font-size: 15px;
+}
+
+.ib-value-money .disabled-field {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #e6eaec;
+    border-radius: 1px;
+    box-sizing: border-box;
+    color: #222426;
+    font-family: OpenSansRegular, sans-serif;
+    font-size: 15px;
+    height: 35px;
+    margin: 0;
+    padding: 0 3px 0 5px;
+    text-align: left;
+    width: 100%;
+}
+
+.ib-label-right span, .ib-value-reference span, .ib-value-string span, .ib-value-integer span, .ib-value-money span,
+.ib-value-date span, .ib-value-boolean span, .ib-value-timestamp span, .ib-value-fixed span, .ib-value-time span,
+.ib-label-right label, .ib-value-reference label, .ib-value-string label, .ib-value-integer label, .ib-value-money label,
+.ib-value-date label, .ib-value-boolean label, .ib-value-timestamp label, .ib-value-fixed label, .ib-value-time label {
+    color: #101416;
+    font-family: OpenSansRegular, sans-serif;
+    font-size: 15px;
+}
+
+/*Для FieldEditValue*/
+.ib-value-reference, .ib-value-string, .ib-value-integer, .ib-value-money, .ib-value-date, .ib-value-boolean, .ib-value-timestamp, .ib-value-fixed, .ib-value-time {
+    float: left;
+    height: 50px;
+}
+
+.ib-value-boolean {
+    margin-right: 6px;
+}
+
+.ib-datagrid-cell .ib-value-boolean {
+    margin-right: 0;
+    margin-left: 1px;
+}
+
+.ib-datagrid-header-cell-filter .ib-value-boolean {
+    margin-right: 0;
+    margin-left: 3px;
+}
+
+/*??????? ? ???? ?????????????*/
+.switch-mode {
+    display: table-cell;
+}
+
+.switch-mode .ib-value-boolean input[type="checkbox"] {
+    cursor: pointer;
+    height: 30px;
+    opacity: 0;
+    position: absolute;
+    width: 59px;
+    z-index: 2;
+}
+
+.switch-mode .ib-value-boolean input[disabled="disabled"] {
+    cursor: default;
+}
+
+.switch-mode .ib-value-boolean input[type="checkbox"]:checked + img + div {
+    background-position: 0 0;
+}
+
+.switch-mode .ib-value-boolean input[type="checkbox"] + img + div {
+    background: rgba(0, 0, 0, 0) url("../../images/corelib/fieldedit/switch.png") no-repeat scroll 0 -30px;
+    display: inline-block;
+    height: 30px;
+    width: 59px;
+}
+.switch-mode .ib-value-boolean input[type="checkbox"]:checked:disabled + img + div {
+    background-position: 0 -60px;
+}
+.switch-mode .ib-value-boolean input[type="checkbox"]:disabled + img + div {
+    background-position: 0 -90px;
+}
+
+/*????????????? ???????*/
+.checkbox-mode .ib-value-boolean input[type="checkbox"] {
+    cursor: pointer;
+    height: 30px;
+    opacity: 0;
+    position: absolute;
+    width: 20px;
+    z-index: 2;
+}
+
+.checkbox-mode .ib-value-boolean input[type="checkbox"]:checked + img + div {
+    background: url("../../images/corelib/fieldedit/checkbox.svg") 0 -20px no-repeat;
+    background-size: 20px 80px;
+}
+
+.checkbox-mode .ib-value-boolean input[type="checkbox"] + img + div {
+    background: url("../../images/corelib/fieldedit/checkbox.svg") top no-repeat;
+    background-size: 20px 80px;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+.ib-value-boolean input[type="checkbox"]:checked:disabled + img + div {
+    background-position: 0 -40px;
+}
+
+.ib-value-boolean input[type="checkbox"]:disabled + img + div {
+    background-position: 0 -60px;
+}
+
+.ib-value-multilingual {
+    float: left;
+}
+
+.variant {
+    height: auto;
+    vertical-align: middle;
+    min-height: 50px;
+}
+
+.variant .ib-value-string {
+    height: auto;
+    vertical-align: middle;
+    min-height: 50px;
+}
+
+.ib-label-table {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+.ib-label-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*Мультиязыковое поле*/
+.ib-multy-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.ib-multy-row {
+    width: 100%;
+    display: table-row;
+}
+
+.ib-multy-text {
+    display: table-cell;
+    width: 100px;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+.ib-multy-field {
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 50px;
+    width: 100%;
+}
+
+.ib-multy-text span {
+    text-align: left;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+.ib-multy-field textarea {
+    height: 49px;
+}
+
+.ib-file {
+    cursor: pointer;
+    height: 20px;
+    left: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    top: 0;
+}
+
+.t-zone #selectmultiple, .ib-value-textarea #selectmultiple {
+    width: 100%;
+}
+
+.ib-file input {
+    height: 20px;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}
+
+.document-button-left {
+    background: url('../../images/corelib/fieldedit/buttFPartL.gif') no-repeat scroll right top transparent;
+    height: 19px;
+    width: 3px;
+    padding: 0;
+    empty-cells: show;
+}
+
+.document-button {
+    background: url('../../images/corelib/fieldedit/buttFPartB.gif') repeat-x scroll center top transparent;
+    color: #3D3D3D;
+    font-weight: bold;
+    height: 19px;
+    padding: 0;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.document-button-right {
+    background: url('../../images/corelib/fieldedit/buttFPartR.gif') no-repeat scroll left top transparent;
+    height: 19px;
+    width: 3px;
+    padding: 0;
+    empty-cells: show;
+}
+
+/*Кнопка Обзор...*/
+#getImages {
+    position: relative;
+    float: left;
+    margin-top: 6px;
+    margin-bottom: 5px;
+}
+
+.button-view-all {
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.button-view-all .ib-base-button-text {
+    float: left;
+    background-color: #c1d2e0;
+    border-radius: 3px;
+    box-shadow: 0 2px #b1c8da;
+    transform: translateY(2px);
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 34px;
+    font-family: OpenSansRegular, sans-serif;
+    font-size: 14px;
+    color: #3a4751;
+}
+
+.upload_btn {
+    position: relative;
+    border-radius: 3px;
+    background-color: #c1d2e0;
+    display: inline-block;
+    text-align: center;
+    width: 97px;
+    height: 37px;
+    font-size: 14px;
+    line-height: 37px;
+    color: #3a4751;
+    box-shadow: 0 2px #b1c8da;
+    overflow: hidden;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.upload_btn > input[type="file"] {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    font-size: 200px;
+    opacity: 0;
+}
+
+.upload_btn > input[type="file"] {
+    filter: alpha(opacity=0);
+}
+
+.button-view-all .ib-base-button-text {
+}
+
+.button-view-all .ib-base-button-left, .button-view-all .ib-base-button-center, .button-view-all .ib-base-button-right, .button-view-all .ib-base-button-text label {
+    cursor: pointer;
+}
+
+.button-view-all .ib-base-button-right {
+    padding-right: 0;
+}
+
+/*Конец кнопки*/
+.ib-file-list {
+    float: left;
+    padding-bottom: 10px;
+}
+
+.ib-file-list #attachedFiles {
+    max-width: 600px;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.dell-file, .rename-file {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.name-file label {
+    display: inline-block;
+    word-wrap: break-word;
+    white-space: normal;
+    vertical-align: middle;
+}
+
+.file-desc-attachments, .file-desc-attachments label {
+    vertical-align: middle;
+}
+
+.size-file-label {
+    display: inline-block;
+}
+
+.name-file-label {
+    display: block;
+    cursor: pointer;
+}
+
+.inp-rename {
+    display: inline-block;
+}
+
+.inp-rename input {
+    width: 200px;
+}
+
+.auto-height {
+    height: auto;
+}
+
+.width-medium {
+    width: 220px;
+}
+
+.ib-error {
+    color: red;
+    font-family: OpenSansRegular, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 11px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+.font-monospace {
+    font-family: Monaco, monospace;
+}
+
+.ib-time-field {
+    width: 75px;
+}

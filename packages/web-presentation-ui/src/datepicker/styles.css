@@ -1,0 +1,162 @@
+.relative {
+    position: relative;
+}
+
+.calendar-container *:focus {
+    outline: none;
+}
+.calendar-container {
+    background-color: #fff;
+    border: 1px solid #e7e8ec;
+    border-radius: 6px;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    padding-bottom: 8px;
+    position: relative;
+    width: 307px;
+    z-index: 999;
+}
+
+.calendar-container:focus, .calendar-container .DayPicker:focus, .calendar-container .DayPicker-Day:focus {
+    outline: none;
+}
+.calendar-container .DayPicker {
+    padding-top: 0;
+    width: 307px;
+}
+.calendar-container .DayPicker-Month {
+    border-collapse: separate;
+    margin: 0;
+    width: 307px;
+}
+
+.calendar-container .DayPicker-Day {
+    background: #fff;
+    border: none;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    color: #000;
+    font-size: 12px;
+    padding: 0;
+    text-align: center;
+}
+
+.calendar-container .DayPicker-Day--today .day-wrapper {
+    background-color: #fff;
+    border: 1px solid #ffcb09;
+    color: #494e50;
+}
+.calendar-container  .DayPicker-Day--selected.DayPicker-Day--today {
+    border-radius: 0;
+}
+
+.calendar-container .DayPicker-Day:not(.DayPicker-Day--selected):hover .day-wrapper {
+    background-color: #d9eee1;
+}
+.calendar-container .DayPicker-Day--today:not(.DayPicker-Day--outside):not(.DayPicker-Day--selected):hover .day-wrapper {
+    border: 1px solid transparent;
+}
+.day-wrapper {
+    border: 1px solid transparent;
+    border-radius: 100%;
+    margin: 0 auto;
+    padding: 7px 0 6px;
+    width: 28px;
+}
+
+/* navBar */
+.calendar-container .DayPicker-NavButton--prev {
+    left: 20px;
+}
+.calendar-container .DayPicker-NavButton--next {
+    right: 20px;
+}
+.calendar-container .DayPicker-Caption {
+    background-color: #f6f6f6;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 6px 6px 0 0;
+    color: #888;
+    font-size: 22px;
+    height: 65px;
+    padding: 5px 0 10px 52px;
+    text-align: left;
+}
+.DayPicker-Caption-data {
+    line-height: 31px;
+    margin: 2px 50px 0 0;
+}
+.calendar-container .DayPicker-NavButton--prev, .calendar-container .DayPicker-NavButton--next {
+    height: 23px;
+    top: 9px;
+    width: 13px;
+}
+.calendar-container .DayPicker-NavButton--prev {
+    background: url(images/previous-month.png) 0 0 no-repeat;
+}
+.calendar-container .DayPicker-NavButton--next {
+    background: url(images/next-month.png) 0 0 no-repeat;
+}
+
+/* weekends */
+.calendar-container .DayPicker-Day--sunday,
+.calendar-container .DayPicker-Day--saturday {
+    background-color: transparent;
+}
+.calendar-container .DayPicker-Day--sunday:not(.DayPicker-Day--today),
+.calendar-container .DayPicker-Day--saturday:not(.DayPicker-Day--today) {
+    color: #677e91;
+}
+
+/* outside days */
+.calendar-container .DayPicker-Day--outside {
+    color: #677e91;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* name of days */
+.calendar-container .DayPicker-Weekdays {
+    background: #f6f8fa;
+}
+.calendar-container .DayPicker-Weekday {
+    color: #888;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 9px;
+    text-transform: uppercase;
+}
+.calendar-container .DayPicker-Weekday abbr {
+    text-decoration: none;
+}
+
+.calendar-container .DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside),
+.calendar-container .DayPicker-Day--selected {
+    background-color: #fff;
+    color: #494e50;
+}
+.calendar-container .DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) .day-wrapper,
+.calendar-container .DayPicker-Day--selected .day-wrapper {
+    background-color: #ffcb09;
+    color: #494e50;
+}
+.calendar-container .DayPicker-Day--saturday.DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside),
+.calendar-container .DayPicker-Day--sunday.DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) {
+    color: #677e91;
+}
+
+.datepicker-buttons {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.calendar-container .calendar-button:last-child {
+    float: right;
+}
+
+.calendar-container .simpleCalendar .DayPicker-Day {
+    border-radius: 16px;
+}
+
+.calendar-container .DayPicker-wrapper{
+    padding: 0;
+}

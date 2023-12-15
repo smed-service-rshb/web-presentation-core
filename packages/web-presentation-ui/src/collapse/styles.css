@@ -1,0 +1,267 @@
+.collapse {
+    position: relative;
+}
+.collapse-right-text {
+    float: right;
+    font-size: 13px;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+.Collapsible__trigger,
+.collapse-additional .collapse-primary .Collapsible__trigger,
+.collapse-additional .collapse-secondary .Collapsible__trigger {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin-left: 10px;
+    padding: 0;
+    position: relative;
+}
+.collapse-primary .Collapsible__trigger,
+.collapse-secondary .collapse-primary .Collapsible__trigger,
+.collapse-additional .collapse-primary .Collapsible__trigger {
+    color: #677e91;
+    font-size: 12px;
+    font-weight: normal;
+}
+.collapse-primary .Collapsible__trigger  .collapse-title-text,
+.collapse-secondary .collapse-primary .Collapsible__trigger  .collapse-title-text,
+.collapse-additional .collapse-primary .Collapsible__trigger  .collapse-title-text {
+    border-bottom: 1px dotted #677e91;
+    display: inline-block;
+    font-size: 16px;
+}
+.collapse-primary .Collapsible__trigger:hover,
+.collapse-secondary .Collapsible__trigger:hover,
+.collapse-additional .collapse-primary .Collapsible__trigger:hover,
+.collapse-additional .collapse-secondary .Collapsible__trigger:hover {
+    color: #6aa744;
+    border-color: #6aa744;
+}
+.collapse-primary .Collapsible__contentInner_style,
+.collapse-secondary .Collapsible__contentInner_style {
+    font-size: 15px;
+    padding-top: 10px;
+}
+.collapse .Collapsible__trigger:focus {
+    color: #6aa744;
+    border-color: #6aa744;
+    outline: none;
+}
+.collapse-primary.disabled .Collapsible__trigger {
+    color: #b3bec8;
+    cursor: default;
+    border-color: #b3bec8;
+}
+.collapse-primary.disabled.unclosed .Collapsible__trigger {
+    color: #677e91;
+    border-color: #677e91;
+}
+.collapse-secondary .Collapsible__trigger,
+.collapse-additional .collapse-secondary .Collapsible__trigger {
+    color: #039035;
+    font-size: 14px;
+    font-weight: bold;
+}
+.collapse-secondary.disabled .Collapsible__trigger {
+    color: #039035;
+    opacity: 0.5;
+    cursor: default;
+}
+.collapse-secondary .Collapsible__trigger .collapse-title-text,
+.collapse-additional .collapse-secondary .Collapsible__trigger .collapse-title-text {
+    border-bottom: 1px dotted #039035;
+}
+.Collapsible__trigger:before {
+    content: '';
+    position: absolute;
+}
+.collapse-primary .Collapsible__trigger:before,
+.collapse-secondary .collapse-primary .Collapsible__trigger:before,
+.collapse-additional .collapse-primary .Collapsible__trigger:before {
+    background: url("icon/collapse-arrow.png") no-repeat 0 100%;
+    height: 6px;
+    left: -10px;
+    top: 8px;
+    width: 6px;
+}
+.collapse-secondary .Collapsible__trigger:before,
+.collapse-additional .collapse-secondary .Collapsible__trigger:before {
+    background: url("icon/collapse-arrow-secondary.png") no-repeat 0 100%;
+    height: 6px;
+    left: -10px;
+    top: 6px;
+    width: 6px;
+}
+.collapse-additional {
+    border-bottom: 1px solid #ebebeb;
+    margin-top: 20px;
+    padding-bottom: 15px;
+}
+.collapse-additional:last-child {
+    border-bottom: none;
+}
+.collapse-additional .Collapsible__trigger {
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+}
+.collapse-additional .Collapsible__trigger .collapse-title-text {
+    border-bottom: none;
+}
+.collapse-additional .Collapsible__trigger:before {
+    background: url("icon/collapse-arrow-additional.png") no-repeat 0 100%;
+    height: 9px;
+    left: -15px;
+    position: absolute;
+    top: 8px;
+    width: 8px;
+}
+.collapse-additional .Collapsible__trigger:hover {
+     color: #000;
+ }
+.collapse-additional .Collapsible__trigger {
+    margin-left: 15px;
+}
+/* complex collapses */
+.collapse-opened.collapse-primary .Collapsible__trigger:before,
+.collapse-opened.collapse-secondary .Collapsible__trigger:before {
+    background-position: 0 0;
+    top: 9px;
+}
+.collapse-opened .collapse-opened.collapse-secondary .Collapsible__trigger:before,
+.collapse-opened .collapse-opened.collapse-primary .Collapsible__trigger:before,
+.collapse-opened.collapse-additional .collapse-primary.collapse-opened .Collapsible__trigger:before,
+.collapse-opened.collapse-additional .collapse-secondary.collapse-opened .Collapsible__trigger:before{
+    background-position: 0 0;
+    top: 6px;
+}
+.collapse-opened .collapse-secondary .Collapsible__trigger:before,
+.collapse-opened .collapse-primary .Collapsible__trigger:before,
+.collapse-opened.collapse-additional .collapse-primary .Collapsible__trigger:before,
+.collapse-opened.collapse-additional .collapse-secondary .Collapsible__trigger:before {
+    background-position: 0 100%;
+    top: 4px;
+}
+.collapse-opened.collapse-additional .Collapsible__trigger:before,
+.collapse-opened .collapse-opened.collapse-additional .Collapsible__trigger:before {
+    background-position: 0 0;
+    top: 11px;
+}
+.collapse-opened .collapse-additional .Collapsible__trigger:before {
+    background-position: 0 100%;
+    top: 8px;
+}
+.collapse-opened .collapse-primary.collapse-opened .Collapsible__contentOuter {
+    margin-bottom: 0;
+}
+.collapse-opened.unclosed .Collapsible__trigger {
+    cursor: default;
+}
+
+.collapse-title {
+    display: table;
+    position: relative;
+    width: 100%;
+}
+.collapse-title-cell {
+    display: table-cell;
+    max-width: 0;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 100%;
+}
+.collapse-left-text {
+    display: table-cell;
+    vertical-align: top;
+}
+.collapse-suggestion .collapse-left-text {
+    color: #000;
+    padding-left: 10px;
+    padding-top: 3px;
+}
+.collapse-table .collapse-title-text {
+    display: table-cell;
+}
+.collapse-subtitle {
+    color: #000;
+    font-size: 18px;
+    padding-right: 10px;
+}
+.collapse-suggestion {
+    margin-bottom: 15px;
+}
+.collapse-suggestion .collapse-title-text {
+    color: #000;
+    font-size: 12px;
+}
+.collapse-suggestion .Collapsible__trigger {
+    margin-bottom: 0;
+    margin-left: 0;
+}
+.collapse-suggestion .Collapsible__contentOuter {
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+.collapse-suggestion.collapse-opened .Collapsible__contentInner {
+    margin-top: 15px;
+}
+.collapse-suggestion .collapse-right-text .buttons {
+    margin-left: 0;
+    margin-right: 0;
+}
+.collapse-suggestion .collapse-right-text  {
+    margin-left: 20px;
+}
+.collapse-suggestion .Collapsible__trigger .collapse-title-cell:after {
+    background: url("icon/collapse-arrow.png") no-repeat 0 0;
+    content: '';
+    height: 6px;
+    right: 0;
+    position: absolute;
+    top: 14px;
+    width: 6px;
+}
+.collapse-suggestion .Collapsible__trigger.is-open .collapse-title-cell:after {
+    background-position: 0 100%;
+}
+.collapse-suggestion.unclosed .Collapsible__trigger.is-open .collapse-title-cell:after {
+    opacity: 0;
+}
+.collapse-suggestion .is-open .collapse-title-cell {
+    white-space: normal;
+}
+.collapse-suggestion .collapse-title-cell {
+    padding-right: 6px;
+    padding-top: 7px;
+}
+.collapse-suggestion .Collapsible {
+    border-bottom: 1px solid #ebebeb;
+}
+.notification-notice .collapse-suggestion .Collapsible {
+    border-bottom: 1px solid #c0d99f;
+}
+.notification-notice .collapse-suggestion:last-child .Collapsible {
+    border-bottom: none;
+}
+.collapse.collapse-suggestion p {
+    margin-bottom: 15px;
+}
+.collapse-item-new:before {
+    background: #dd223d;
+    border-radius: 100%;
+    content: '';
+    height: 8px;
+    left: -8px;
+    position: absolute;
+    top: 9px;
+    width: 8px;
+}
+
+.hideArrow.collapse-suggestion .Collapsible__trigger .collapse-title-cell:after {
+    opacity: 0;
+}

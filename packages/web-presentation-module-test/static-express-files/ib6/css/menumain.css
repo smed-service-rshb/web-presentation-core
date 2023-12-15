@@ -1,0 +1,61 @@
+/* MenuMainDefaultImpl */
+.ib-menu-main input.ib-button-debuttonizer, .ib-menu-main button.ib-button-debuttonizer {
+    display: none;
+}
+
+ul.ib-menu-main {
+    white-space: nowrap;
+    font-family: OpenSansSemiBold;
+    font-size: 16px;
+    text-decoration: none;
+    height: 56px;
+    display: table;
+    width: 1200px;
+}
+
+ul.ib-menu-main li {
+    float: left;
+    vertical-align: middle;
+    height: 56px;
+}
+
+ul.ib-menu-main li a {
+    cursor: pointer;
+    line-height: 56px;
+    padding-left: 21px;
+    padding-right: 21px;
+    min-width: 140px;
+    display: table-cell;
+    color: #fff;
+    text-decoration: none;
+}
+
+ul:last-child.ib-menu-main li:last-child a {
+    min-width: 141px;
+}
+
+ul.ib-menu-main li a:visited {
+}
+
+ul.ib-menu-main li a:hover {
+    color: #f6faeb;
+    border-bottom: #a6ce39 solid 4px;
+}
+
+ul.ib-menu-main li a:active {
+    color: #f6faeb;
+    border-bottom: #ffcb08 solid 4px;
+}
+
+.ib-menu-main-item-unselected {
+    margin: auto;
+    text-align: center;
+}
+
+.ib-menu-main-item-selected {
+    border-bottom: #ffcb08 solid 4px;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+}
+

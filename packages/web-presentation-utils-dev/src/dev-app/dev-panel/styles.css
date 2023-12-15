@@ -1,0 +1,18 @@
+body { /*TODO delete*/
+    margin: 0;
+}
+
+.dev-panel-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-height: 400px;
+    border-top: 4px double #555;
+    overflow-y: scroll;
+    opacity: 0.80;
+    background-color: #ddd;
+}
+
+.dev-panel-content {
+    margin: 10px;
+}

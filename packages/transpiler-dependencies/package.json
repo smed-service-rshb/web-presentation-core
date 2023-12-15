@@ -1,0 +1,24 @@
+{
+  "name": "@efr/medservice-transpiler-dependencies",
+  "version": "15.0.2-smed",
+  "description": "Набор зависимостей для преобразования кода из es2015 в ES-e.",
+  "dependencies": {
+    "babel-core": "6.26.3",
+    "babel-eslint": "7.2.3",
+    "babel-loader": "7.1.1",
+    "babel-plugin-transform-export-extensions": "6.22.0",
+    "babel-plugin-transform-require-stub": "0.3.0",
+    "babel-polyfill": "6.23.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-react-app": "3.0.2"
+  },
+  "scripts": {
+    "lint": "run-liter"
+  },
+  "devDependencies": {
+    "@efr/medservice-eslint-config-react": "^15.0.2-smed"
+  },
+  "publishConfig": {
+    "@efr:registry": "http://coral:18088/repository/efr-presentation-common/"
+  }
+}

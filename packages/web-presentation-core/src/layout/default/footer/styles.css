@@ -1,0 +1,40 @@
+.footer {
+    height: 70px;
+    margin: -70px auto 0;
+    min-width: 860px;
+    min-height: 70px;
+    padding: 0 40px;
+    position: relative;
+}
+.footer-content {
+    display: table;
+    font-size: 12px;
+    padding: 21px 0;
+    width: 100%;
+}
+.copyright {
+    display: table-cell;
+    vertical-align: middle;
+}
+.footer-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 28%;
+}
+.footer-phone {
+    display: inline-block;
+    float: left;
+}
+.footer-email {
+    display: inline-block;
+    float: right;
+}
+.address {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+}
+.footer-link {
+    text-decoration: none;
+}

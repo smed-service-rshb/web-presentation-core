@@ -1,0 +1,154 @@
+div.msgBox {
+    padding: 4px 10px 4px 10px;
+    position: fixed;
+    font-family: OpenSansRegular, sans-serif;
+    min-height: 100px;
+    color: #00335e;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -moz-box-shadow: 0 0 11px #62676d;
+    -webkit-box-shadow: 0 0 11px #62676d;
+    box-shadow: 0 0 11px #62676d;
+    background-color: #fff;
+    z-index: 11000;
+    cursor: default;
+}
+
+div.msgBoxBackGround {
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: black url('../../images/corelib/msgbox/background.png');
+    opacity: 0.9;
+    z-index: 1999;
+}
+
+div.msgBoxTitle {
+    padding: 10px;
+    font-size: 18px;
+    font-family: OpenSansSemiBold, sans-serif;
+    color: #141719;
+    width: 100%;
+    border-bottom: 1px solid #e3e6ea;
+}
+
+div.msgBoxImage {
+    margin: 15px 6px 0 10px;
+    float: left;
+    height: 32px;
+    width: 32px;
+}
+
+div.msgBoxImageAlert {
+    background-image: url('../../images/corelib/msgbox/alert.svg');
+    background-size: 32px 32px;
+}
+
+div.msgBoxImageConfirm {
+    background-image: url('../../images/corelib/msgbox/confirm.svg');
+    background-size: 32px 32px;
+}
+
+div.msgBoxImageError {
+    background-image: url('../../images/corelib/msgbox/error.svg');
+    background-size: 32px 32px;
+}
+
+div.msgBoxImageInfo {
+    background-image: url('../../images/corelib/msgbox/info.svg');
+    background-size: 32px 32px;
+}
+
+div.msgBoxContent {
+    font-size: 14px;
+    margin: 20px 10px 20px 3px;
+    float: left;
+    overflow: hidden;
+}
+
+div.msgBoxContent p {
+    padding: 0;
+    margin: 0;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+div.msgBoxContent span {
+    display: table-cell;
+    vertical-align: middle;
+    color: #141719;
+}
+
+div.msgBoxButtons {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+div.msgBoxButtonsDeleteNotification {
+    display: table;
+    margin: 0 auto 0 25px;
+    padding-bottom: 10px;
+}
+div.msgBox .base-button {
+    margin-top: 10px;
+}
+
+div.msgBoxButtons input[type='button'] {
+    min-width: 60px;
+    height: 32px;
+    line-height: 32px;
+    margin: 5px;
+    padding: 0 20px;
+    border: none;
+    font-family: OpenSansSemiBold, sans-serif;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .15s;
+    background-color: #079841;
+    box-shadow: 0 2px #006c1e;
+    outline-width: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+div.msgBoxButtons input[type='button']:hover {
+    background-color: #01af3f;
+    box-shadow: 0 2px #028d2f;
+}
+
+div.msgBoxButtons input[type='button']:active {
+    background-color: #006c1e;
+    box-shadow: 0 2px #006c1e;
+}
+
+div.msgBoxInputs {
+    margin: 5px auto 0 auto;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: 195px;
+}
+
+div.msgInput input[type='text'], div.msgInput input[type='password'] {
+    padding: 4px;
+    border: 1px solid #DFDFDF;
+    color: #2f2f2f;
+    width: 180px;
+}
+
+div.msgInput text {
+    color: #2f2f2f;
+    font-size: 10pt;
+}

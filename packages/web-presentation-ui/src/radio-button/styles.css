@@ -1,0 +1,56 @@
+.radio {
+    height: 25px;
+    margin: 0 3px 0 0;
+    opacity: 0;
+    vertical-align: top;
+    width: 24px;
+}
+.radio-container {
+    cursor: pointer;
+    display: inline-block;
+    height: 25px;
+    margin-right: 11px;
+    margin-top: -5px;
+    min-width: 24px;
+    vertical-align: top;
+}
+.radio + .radio-style {
+    cursor: pointer;
+    display: inline-block;
+    height: 25px;
+    vertical-align: top;
+    width: 24px;
+}
+.radio:not(checked) {
+    position: absolute;
+}
+.radio:not(checked) + .radio-style {
+    position: relative;
+}
+.radio:not(checked):focus + .radio-style:before, .switcher-radio:not(.disabled) .switcher-item:focus .radio:not(checked) + .radio-style:before {
+    background: url("icon/radiobutton.png") no-repeat 0 -145px;
+}
+.radio:not(checked) + .radio-style:before {
+    background: url("icon/radiobutton.png") no-repeat 0 -29px;
+    content: '';
+    cursor: pointer;
+    height: 25px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 24px;
+}
+.radio:checked + .radio-style:before {
+    background: url("icon/radiobutton.png") no-repeat 0 0;
+    opacity: 1;
+}
+.radio:checked:focus + .radio-style:before, .switcher-radio:not(.disabled) .switcher-item:focus .radio:checked + .radio-style:before {
+    background: url("icon/radiobutton.png") no-repeat 0 -116px;
+}
+.radio:not(checked):disabled + .radio-style:before {
+    background-position: 0 -87px;
+    cursor: default;
+}
+.radio:checked:disabled + .radio-style:before {
+    background-position: 0 -58px;
+}

@@ -1,0 +1,57 @@
+HTML > BODY DIV.ib-errors LI {
+  color: red;
+  line-height: 16px;
+  font-family: OpenSansRegular, Arial;
+  text-align: left;
+  padding-left: 10px;
+  background: transparent url(../../images/corelib/punkt.gif) no-repeat left center;
+}
+
+HTML > BODY DIV.ib-errors UL {
+  padding-left: 25px;
+  padding-bottom: 10px;
+}
+
+HTML > BODY DIV.ib-warnings LI {
+  color: red;
+  line-height: 16px;
+  font-family: OpenSansRegular, Arial;
+  text-align: left;
+  padding-left: 10px;
+  background: transparent url(../../images/corelib/punkt.gif) no-repeat left center;
+}
+
+HTML > BODY DIV.ib-warnings UL {
+  margin-left: 25px;
+}
+
+.ib-errors-border-top {
+  border: 1px solid red;
+  border-bottom: none;
+  padding: 5px;
+  margin: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.ib-errors-border-bottom {
+  border: 1px solid red;
+  border-top: none;
+  padding: 5px;
+  padding-top: 0px;
+  margin: 20px;
+  margin-top: 0px;
+}
+
+.ib-errors-title {
+  font-family: OpenSansBold, Arial;
+  color: #F00;
+  padding: 10px;
+}
+
+.ib-warnings-title {
+  font-family: OpenSansBold, Arial;
+  color: #F00;
+  margin-bottom: 12px;
+  padding-top: 10px;
+}

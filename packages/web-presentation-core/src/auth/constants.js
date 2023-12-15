@@ -1,0 +1,1 @@
+export const EFR_SESSION_MARKER_HEADER_NAME = "x-efr-session-marker";

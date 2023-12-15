@@ -1,0 +1,85 @@
+.link {
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1.3;
+    outline: none;
+    text-decoration: none;
+}
+.link-text {
+    border-bottom: 1px solid #81c79a;
+    color: #039035;
+    text-decoration: none;
+}
+.link:hover .link-text {
+    border-bottom: 1px solid #a6ce39;
+    color: #6ca01e;
+}
+.link:focus .link-text {
+    border-bottom: 1px solid #a6ce39;
+    color: #6ca01e;
+}
+.link.disabled {
+    cursor: default;
+    opacity: 0.5;
+}
+.link.disabled .link-text {
+    border-bottom: 1px solid #81c79a;
+    color: #039035;
+}
+.link-pseudo .link-text {
+    border-bottom: 1px dotted #81c79a;
+}
+.link-pseudo:hover .link-text, .link-pseudo:focus .link-text {
+    border-bottom: 1px dotted #a6ce39;
+}
+.link-external {
+    margin-right: 15px;
+    position: relative;
+}
+.link-external .link-text {
+    border-bottom: 1px solid #81c79a;
+}
+.link-external:after {
+    background: url("icon/external-link.png") 0 0 no-repeat;
+    content: '';
+    display: inline-block;
+    height: 8px;
+    position: absolute;
+    right: -12px;
+    top: 1px;
+    width: 9px;
+}
+.link-external:hover .link-text {
+    border-bottom: 1px solid #a6ce39;
+}
+.link-external:hover:after, .link-external:focus:after {
+    background-position: 0 100%;
+}
+.link-additional .link-text {
+    border-bottom: 2px dashed;
+    color: #249d4f;
+    font-weight: 700;
+    padding-bottom: 2px;
+}
+.link-additional:hover .link-text {
+    border-bottom: 2px dashed #a6ce39;
+    color: #a6ce39;
+    font-weight: 700;
+    padding-bottom: 2px;
+}
+.link-additional .link-icon-item {
+    background-position: 0 0;
+    height: 24px;
+    width: 24px;
+}
+.link-icon-item {
+    background-size: cover;
+    display: inline-block;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
+    width: 16px;
+}
+.link-additional:hover .link-icon-item {
+    background-position: 0 24px;
+}

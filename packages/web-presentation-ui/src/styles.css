@@ -1,0 +1,183 @@
+/* text color*/
+.green {
+    color: #039035;
+}
+.light-green {
+    color: #6ca01e;
+}
+.black {
+    color: #000;
+}
+.white {
+    color: #fff;
+}
+.gray {
+    color: #656565;
+}
+.light-gray {
+    color: #888;
+}
+.gray-blue {
+    color: #677e91;
+}
+.red {
+    color: #dd223d;
+}
+.deep-red {
+    color: #9e0b0f;
+}
+.blue {
+    color: #0072bc;
+}
+.light-blue {
+    color: #7accc8;
+}
+
+/* end text color*/
+
+.clear {
+    clear: both;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.block {
+    display: block;
+}
+.inline {
+    display: inline;
+}
+.inline-block {
+    display: inline-block;
+}
+.relative {
+    position: relative;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.italic {
+    font-style: italic;
+}
+.bold {
+    font-weight: bold;
+}
+.normal {
+    font-weight: normal;
+}
+.align-top {
+    vertical-align: top;
+}
+.align-middle {
+    vertical-align: top;
+}
+.align-center {
+    text-align: center;
+}
+.align-left {
+    text-align: left;
+}
+.align-right {
+    text-align: right;
+}
+.align-center {
+    text-align: center;
+}
+.align-left {
+    text-align: left;
+}
+.align-right {
+    text-align: right;
+}
+.pointer {
+    cursor: pointer;
+}
+.nowrap {
+    white-space: nowrap;
+}
+.subtitle {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+/*text size*/
+.size12 {
+    font-size: 12px;
+}
+.size13 {
+    font-size: 13px;
+}
+.size14 {
+    font-size: 14px;
+}
+.size15 {
+    font-size: 15px;
+}
+.size16 {
+    font-size: 16px;
+}
+
+/*Modal`s width*/
+.popup-content-width-600 {
+   width: 600px;
+}
+
+/* Columns */
+.width50 {
+    box-sizing: border-box;
+    display: inline-block;
+    padding-right: 5px;
+    width: 50%;
+}
+.width33 {
+    display: inline-block;
+    width:33.3%;
+}
+
+/* List */
+ul.list {
+    list-style-type: none;
+    padding-left: 0;
+}
+ul.list li {
+    margin-bottom: 15px;
+    position: relative;
+    text-indent: 8px;
+}
+ul.list li:before {
+    background: url("standard-icons/pointer.png") 0 0 no-repeat;
+    content: '';
+    height: 4px;
+    left: 0;
+    position: absolute;
+    top: 9px;
+    width: 4px;
+}
+ul.list.red li:before {
+    background: url("standard-icons/pointer-red.png") 0 0 no-repeat;
+}
+
+/* indents */
+.text-indent-left {
+    margin-left: 10px;
+}
+.text-indent-right {
+    margin-right: 10px;
+}
+.margin-bottom-0 {
+    margin-bottom: 0;
+}
+.margin-bottom-5 {
+    margin-bottom: 5px;
+}
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}

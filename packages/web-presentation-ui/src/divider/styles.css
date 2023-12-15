@@ -1,0 +1,31 @@
+.divider {
+    margin: 20px 0;
+    position: relative;
+    text-align: center;
+}
+.divider-border {
+    background: #e7e8ec;
+    height: 1px;
+}
+.divider-border-text {
+    position: absolute;
+    top: 54%;
+    width: 100%;
+}
+.divider-description {
+    background: #fff;
+    color: #677e91;
+    display: inline-block;
+    font-size: 15px;
+    padding: 0 12px;
+    position: relative;
+    top: 0;
+}
+.divider.divider-clear, .divider.divider-clear .divider-border {
+    background-color: transparent;
+    clear: both;
+    margin: 0;
+}
+.divider-incomplete {
+    margin-left: 110px;
+}

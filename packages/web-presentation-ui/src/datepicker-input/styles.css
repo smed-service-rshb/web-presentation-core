@@ -1,0 +1,54 @@
+.input-component {
+    background-color: #fff;
+    border: 1px solid #b1cde2;
+    border-radius: 1px;
+    box-sizing: border-box;
+    color: #222426;
+    font-family: "Open Sans";
+    font-size: 15px;
+    height: 35px;
+    padding: 0 5px;
+    text-align: left;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+.datepicker.input-component {
+    width: 115px;
+}
+.datepicker-icon {
+    background: url(images/calendar.jpg) 0 0 no-repeat;
+    cursor: pointer;
+    height: 18px;
+    top: 5px;
+    position: absolute;
+    right: 5px;
+    width: 21px;
+}
+
+.datepicker-overlay {
+    position: absolute;
+    z-index: 9999;
+}
+.datepicker-container {
+    margin-top: -7px;
+    width: 115px;
+}
+.datepicker-container .input {
+    margin-top: 0;
+    width: 115px;
+}
+.datepicker-icon.disabled {
+    cursor: default;
+    opacity: 0.5;
+}
+
+.datepicker-background {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+}
+

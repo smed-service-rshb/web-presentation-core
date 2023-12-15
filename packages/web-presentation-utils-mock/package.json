@@ -1,0 +1,30 @@
+{
+  "name": "@efr/medservice-web-presentation-utils-mock",
+  "version": "15.0.2-smed",
+  "description": "Утилитный модуль реализации заглушек.",
+  "main": "src/index.js",
+  "dependencies": {
+    "@efr/medservice-transpiler-dependencies": "^15.0.2-smed",
+    "body-parser": "1.17.2",
+    "dotenv": "4.0.0",
+    "express": "4.16.3",
+    "express-fileupload": "0.4.0",
+    "morgan": "1.8.2",
+    "path": "0.12.7"
+  },
+  "devDependencies": {
+    "@efr/medservice-eslint-config-react": "^15.0.2-smed"
+  },
+  "scripts": {
+    "lint": "run-liter"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "bin": {
+    "start-mock": "./bin/start-mock.js"
+  },
+  "publishConfig": {
+    "@efr:registry": "http://coral:18088/repository/efr-presentation-common/"
+  }
+}

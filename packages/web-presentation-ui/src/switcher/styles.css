@@ -1,0 +1,182 @@
+.switcher button {
+    background: transparent;
+    border: none;
+    margin: 0;
+    outline: none;
+    padding: 0;
+}
+.switcher button span {
+    outline: none;
+}
+.switcher {
+    display: inline-block;
+}
+.switcher ul  {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.switcher ul li {
+    display: inline-block;
+    margin-right: 17px;
+}
+.switcher ul li button {
+    border-bottom: 1px dashed;
+    color: #039035;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: left;
+    text-decoration: none;
+}
+.switcher:last-child {
+    margin-right: 0;
+}
+.switcher ul li button.currentSwitcher {
+    border-bottom: none;
+    color: #000;
+}
+.switcher-item:hover, .switcher-item:focus {
+    color: #6ca01e;
+    border-bottom-color: #a6ce39;
+    outline: none;
+}
+.switcher ul li button.currentSwitcher:focus {
+    border-bottom: 1px dashed;
+}
+.switcher ul.disabled li button.currentSwitcher:focus, .switcher ul.disabled li button.currentSwitcher:hover {
+    border-bottom: none;
+    color: #000;
+}
+.switcher_labels.disabled .switcher-item {
+    cursor: default;
+}
+.switcher-primary.disabled .switcher-item:hover, .switcher-primary.disabled .switcher-item:focus {
+    color: #039035;
+    border-bottom-color: #039035;
+}
+
+/* Type secondary */
+ul.switcher-secondary {
+    background-color: #fff;
+    border: 1px solid #027b2d;
+    border-radius: 2px;
+    margin: 0 10px 0 0;
+}
+ul.switcher-secondary.disabled, ul.switcher-primary.disabled {
+    opacity: 0.5;
+}
+ul.switcher-secondary li {
+    border-right: 1px solid #027b2e;
+    margin-right: 0;
+}
+ul.switcher-secondary li:hover {
+    background: #fff5db;
+}
+ul.switcher-secondary li:hover button {
+    color: #039035;
+    text-decoration: underline;
+}
+ul.switcher-secondary li:last-child {
+    border-right: none;
+    margin-right: 0;
+}
+ul.switcher-secondary li button {
+    border-bottom: none;
+    display: inline-block;
+    padding: 8px 25px;
+}
+ul.switcher-secondary li button:focus {
+    background: #fff5db;
+    color: #039035;
+    text-decoration: underline;
+}
+ul.switcher-secondary li button.currentSwitcher {
+    background-color: #029e44;
+    border-bottom: none;
+    color: #fff;
+    display: inline-block;
+    padding: 8px 25px;
+}
+ul.switcher-secondary li button.currentSwitcher:focus {
+    border-bottom: none;
+    text-decoration: underline;
+}
+ul.switcher-secondary.disabled .switcher-item:hover, ul.switcher-secondary.disabled .switcher-item:focus {
+    background: transparent;
+    color: #039035;
+    text-decoration: none;
+}
+ul.switcher-secondary.disabled .switcher-item.currentSwitcher:hover, ul.switcher-secondary.disabled .switcher-item.currentSwitcher:focus {
+    background: #029e44;
+    color: #fff;
+}
+ul.switcher-secondary.disabled li:hover {
+    background: transparent;
+}
+
+/* Type radio */
+ul.switcher-radio .radio-container {
+    display: inline-block;
+    margin-right: 0;
+    vertical-align: top;
+}
+.switcher ul.switcher-radio li button {
+    color: #000;
+    font-size: 15px;
+    overflow: visible;
+}
+.switcher ul.switcher-radio li button .switcher-item-text {
+    display: inline-block;
+    margin:0 0 0 5px;
+    vertical-align: top;
+}
+.switcher ul.switcher-radio li button, .switcher ul.switcher-radio li button:focus {
+    border-bottom: none;
+}
+.switcher ul.switcher-radio li button.currentSwitcher:focus {
+    border-bottom: none;
+}
+.switcher-vertical-align {
+    vertical-align: top;
+}
+
+/* Type radioVerticalList */
+ul.switcher-radioVerticalList .radio-container {
+    display: inline-block;
+    margin-right: 0;
+    vertical-align: top;
+}
+.switcher ul.switcher-radioVerticalList li button {
+    color: #000;
+    font-size: 15px;
+    overflow: visible;
+}
+.switcher ul.switcher-radioVerticalList li {
+    display: block;
+    margin-bottom: 15px;
+}
+.switcher ul.switcher-radioVerticalList li button .switcher-item-text {
+    display: inline-block;
+    margin:0 0 0 5px;
+    vertical-align: top;
+}
+.switcher ul.switcher-radioVerticalList li button, .switcher ul.switcher-radioVerticalList li button:focus {
+    border-bottom: none;
+}
+.switcher ul.switcher-radioVerticalList li button.currentSwitcher:focus {
+    border-bottom: none;
+}
+.switcher-vertical-align {
+    vertical-align: top;
+}
+.switcher-item-radio {
+    position: relative;
+}
+.switcher-item-radio .radio-container {
+    position: absolute;
+}
+.switcher-item-radio .switcher-item-text {
+    padding-left: 25px;
+    position: relative;
+    top: 0;
+}

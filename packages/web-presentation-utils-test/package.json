@@ -1,0 +1,21 @@
+{
+  "name": "@efr/medservice-web-presentation-utils-test",
+  "version": "15.0.2-smed",
+  "description": "Утилитный модуль реализации тестов.",
+  "main": "src/index.js",
+  "dependencies": {
+    "@efr/medservice-react-test": "^15.0.2-smed",
+    "@efr/medservice-web-presentation-core": "^15.0.2-smed",
+    "@efr/medservice-web-presentation-ui": "^15.0.2-smed",
+    "@efr/medservice-web-presentation-utils-dev": "^15.0.2-smed"
+  },
+  "devDependencies": {
+    "@efr/medservice-eslint-config-react": "^15.0.2-smed"
+  },
+  "scripts": {
+    "lint": "run-liter"
+  },
+  "publishConfig": {
+    "@efr:registry": "http://coral:18088/repository/efr-presentation-common/"
+  }
+}

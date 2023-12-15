@@ -1,0 +1,227 @@
+/* LayoutMainDefaultImpl */
+body {
+    border: none;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+}
+
+table.ib-layout-main {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+/*table.ib-layout-main td.header
+{
+  height: 32px;
+}
+
+table.ib-layout-main td.body
+{
+  height: expression(document.documentElement.clientHeight -   32 -   53 +   'px');
+  background: url(images/fon.jpg) repeat-y;
+  background-color: #FFF;
+}
+
+table.ib-layout-main td.footer
+{
+  height: 53px;
+}*/
+
+td.ib-layout-main-left {
+    height: 100%;
+    vertical-align: top;
+    width: 320px;
+    padding-left: 20px;
+    padding-top: 40px;
+}
+
+table.ib-layout-main-left {
+    width: 329px;
+    height: 100%;
+    vertical-align: top;
+}
+
+.ib-layout-main-left-top {
+    width: 329px;
+    height: 28px;
+}
+
+.ib-layout-main-menu-left {
+    padding-right: 15px;
+    padding-bottom: 20px;
+    vertical-align: top;
+}
+
+.ib-layout-main-left-logotype {
+    display: table-cell;
+    width: 341px;
+}
+
+.logo_content {
+    vertical-align: middle;
+}
+
+.logo_long {
+    vertical-align: middle;
+}
+
+.logo_long img {
+    width: 350px;
+    height: 72px;
+}
+
+.ib-layout-main-left-banner {
+    width: 100%;
+    vertical-align: top;
+}
+
+.ib-layout-main-left-bottom {
+    width: 0;
+    height: 42px;
+    vertical-align: bottom;
+}
+
+.ib-layout-main-left-footer {
+    width: 100%;
+    height: 57px;
+    border-top: 1px solid #ffcc00;
+}
+
+td.ib-layout-main-right {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    padding-right: 20px;
+}
+
+table.ib-layout-main-right {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+/*.ib-layout-main-right:before
+{
+  content: "";
+  border-top: 17px solid #3C3E3E;
+  display: block;
+}*/
+
+td.ib-layout-main-right-top {
+    height: 46px;
+}
+
+table.ib-layout-main-right-top {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.ib-layout-main-right-top-extentions {
+    white-space: nowrap;
+}
+
+.ib-layout-main-right-top-user span#USER_NAME_LABEL {
+    font-weight: bold;
+}
+
+.ib-layout-main-right-top-help-context {
+    width: 10px;
+}
+
+.ib-layout-main-right-top-help {
+    width: 48px;
+    text-align: center;
+}
+
+.ib-layout-main-right-top-exit {
+    width: 48px;
+    text-align: center;
+}
+
+.ib-layout-main-right-top-corner {
+    width: 0;
+}
+
+.ib-layout-main-menu-main {
+    height: 60px;
+    background-color: #03732b;
+    padding: 0px;
+    margin: 0px;
+    display: table;
+    border-radius: 2px;
+}
+
+.ib-layout-main-menu-row {
+    display: table-row;
+    height: 39px;
+}
+
+.ib-layout-main-menu-main-left {
+    width: 0;
+}
+
+.ib-layout-main-menu-main-menu {
+
+}
+
+.ib-layout-main-menu-main-right {
+    width: 0;
+}
+
+td.ib-layout-main-menu-main {
+    width: 100%;
+    height: 39px;
+    background-color: #F8740D;
+    padding: 0px;
+    margin: 0px;
+}
+
+table.ib-layout-main-menu-main {
+    width: 100%;
+    height: 100%;
+}
+
+.ib-layout-main-menu-main-left {
+    height: 39px;
+    width: 0;
+    display: table-cell;
+}
+
+.ib-layout-main-menu-main-right {
+    height: 39px;
+    display: table-cell;
+}
+
+.ib-layout-main-alerts {
+    padding: 5px 15px 0;
+    vertical-align: top;
+}
+
+.ib-layout-main-work {
+    overflow: auto;
+    height: 100%;
+    vertical-align: top;
+    padding-top: 10px;
+}
+
+td.ib-layout-main-right-bottom {
+    height: 42px;
+}
+
+td.ib-layout-main-right-corn {
+    width: 0;
+}
+
+table.ib-layout-main-right-bottom {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+}

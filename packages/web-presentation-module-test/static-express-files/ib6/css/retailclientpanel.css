@@ -1,0 +1,12 @@
+/*Ширина для длинных наименований форм*/
+.big-label {
+    width: 250px;
+}
+
+.ib-panel {
+    width: 1000px;
+}
+
+.ib-icon-button-phone-padding {
+    padding: 13px;
+}

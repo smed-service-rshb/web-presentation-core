@@ -1,0 +1,9 @@
+.dev-panel-button {
+    opacity: 0.80;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #fcfcfc;
+    cursor: pointer;
+}

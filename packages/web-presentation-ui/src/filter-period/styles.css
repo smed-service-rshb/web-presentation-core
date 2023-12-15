@@ -1,0 +1,48 @@
+.period-filter-tab {
+    background: transparent;
+    border: none;
+    border-radius: 6px 6px 0 0;
+    cursor: pointer;
+    display: inline-block;
+    height: 45px;
+    margin-right: 8px;
+    outline: none;
+    padding: 0 12px;
+}
+.period-filter-tab-text {
+    border-bottom: 1px dotted;
+    color: #039035;
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 15px;
+}
+.period-filter-tab-dates {
+    display: inline-block;
+    margin-left: 15px;
+}
+.dash {
+    display: inline-block;
+    margin: 0 10px;
+}
+.period-filter-tab-button {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.period-filter-tab.active {
+    background: #d7e7e9;
+}
+.period-filter-tab.active .period-filter-tab-text {
+    border-bottom: 1px dotted transparent;
+    color: #000;
+}
+.period-filter-tab.active:focus .period-filter-tab-text {
+    border-bottom: 1px dotted;
+}
+.period-filter-tab:not(.active):hover, .period-filter-tab:not(.active):focus {
+    background: #fff5db;
+}
+.period-filter-tab:not(.active):hover .period-filter-tab-text, .period-filter-tab:not(.active):focus .period-filter-tab-text {
+    border-bottom: 1px dotted transparent;
+    color: #000;
+}

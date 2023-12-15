@@ -1,0 +1,138 @@
+.field {
+    padding: 7px 0;
+}
+
+.field-title {
+    display: inline-block;
+    font-size: 15px;
+    margin: 0 20px 0 0;
+    position: relative;
+    text-align: left;
+    vertical-align: top;
+    width: 270px;
+}
+.field-title:after {
+    border-bottom: 1px dotted #d8d8d8;
+    top: 12px;
+    content: '';
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.field-selected .field-title {
+    width: 270px;
+}
+.field-title .hint-container {
+    background: #fff;
+    margin-bottom: -2px;
+    margin-top: -4px;
+    position: relative;
+    z-index: 3;
+}
+.field-title-text {
+    background: #fff;
+    display: inline;
+    padding-right: 5px;
+    position: relative;
+    vertical-align: top;
+    z-index: 2;
+}
+.field-value {
+    display: inline-block;
+    font-size: 15px;
+    max-width: 600px;
+    padding-top: 0;
+    vertical-align: top;
+}
+
+.field-columns-2 .field {
+    box-sizing: border-box;
+    display: inline-block;
+    padding-right: 10px;
+    vertical-align: top;
+    width: 50%;
+}
+
+.field-columns-2 .field-title {
+    max-width: 150px;
+}
+
+.field-columns-2 .field-value {
+    max-width: 260px;
+}
+
+.without-left-menu .field-columns-2 .field-title {
+  max-width: 300px;
+}
+.without-left-menu .field-columns-2 .field-value {
+  max-width: 310px;
+}
+
+.errors {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.field-selected {
+    background-color: #d7e7e9;
+    border-radius: 5px;
+    padding: 10px 10px 10px 0;
+}
+
+/* left */
+.field-title-left {
+    text-align: left;
+}
+.field-title-text-left {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+.field-title-left .field-title-text:after {
+    border-bottom: 1px dotted #e7e8ec;
+    bottom: 4px;
+    content: '';
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.field-title-text-left-item {
+    background: #fff;
+    position: relative;
+    z-index: 2;
+}
+.field + .fieldset-subtitle {
+    margin: 10px 0 0;
+}
+
+.form-field {
+    display: block;
+    position: relative;
+}
+.form-field-title {
+    color: #808080;
+    display: inline-block;
+    font-size: 15px;
+    margin-bottom: 14px;
+}
+.form-field-value {
+    margin-bottom: 10px;
+}
+.form-errors {
+    font-size: 15px;
+    margin-top: 8px;
+}
+.field-columns-4 .field {
+    box-sizing: border-box;
+    display: inline-block;
+    padding-right: 10px;
+    vertical-align: top;
+    width: 25%;
+}
+.field-columns-4 .width-collapse {
+    width: auto;
+}

@@ -1,0 +1,122 @@
+.avatar-container {
+    border: 2px solid #d8d8d8;
+    border-radius: 5px;
+    height: 180px;
+    margin-right: 20px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 180px;
+}
+/*.avatar-size-big {
+    height: 179px;
+    width: 179px;
+}
+.avatar-size-medium {
+    height: 118px;
+    width: 118px;
+}
+.avatar-size-small {
+    height: 29px;
+    width: 29px;
+}*/
+.avatar-empty {
+    height: 100%;
+    width: 100%;
+}
+.avatar-empty-female {
+    background: url("icon/default-female.jpg") no-repeat 0 0;
+     background-size: contain;
+}
+.avatar-empty-male {
+   background: url("icon/default-male.jpg") no-repeat 0 0;
+    background-size: contain;
+}
+.avatar-user-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.avatar-button-area {
+    position: absolute;
+    right: 2px;
+    top: 10px;
+}
+.avatar-button {
+    background-color: #fff;
+    border: 1px dashed #9ab995;
+    border-radius: 100%;
+    cursor: pointer;
+    display: inline-block;
+    height: 36px;
+    margin-right: 5px;
+    overflow: hidden;
+    padding: 0;
+    width: 36px;
+}
+.avatar-button:hover {
+    border-color: #4e8247;
+    box-shadow: 0 0 5px 0 rgba(164,193,160, .5);
+}
+.avatar-button.pressed, .avatar-button:focus {
+    border-color: #9ab995;
+    box-shadow: 0 0 5px 0 rgba(164,193,160, .75) inset;
+    outline: none;
+}
+.avatar-button-img {
+    height: 36px;
+    width: 36px;
+}
+
+.file-input {
+    cursor: pointer;
+    font-size: 0;
+    display: none;
+    height: 100%;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
+    position:absolute;
+    right: 0;
+    top: 0;
+    width: 156px;
+}
+
+.avatar-container .upload-empty {
+    background: none;
+    padding: 0;
+}
+.avatar-container .upload-empty-border, .avatar-container .upload-button:hover .upload-empty-border {
+    border-bottom: none;
+    padding: 0;
+}
+.avatar-container .upload-container {
+    display: inline-block;
+}
+.avatar-container .upload-button {
+    cursor: pointer;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 89px;
+    background-color: transparent;
+    border: 2px solid #039035;
+    border-radius: 5px;
+    color: #039035;
+    padding: 6px 0;
+    font-size: 14px;
+    font-weight: 600;
+    width: 96px;
+    text-align: center;
+}
+.avatar-container .upload-button:hover {
+    border: 2px solid #a6ce39;
+    color: #a6ce39;
+}
+.avatar-container .upload-button:focus .upload-empty-border {
+    border-color: #a6ce39;
+    outline: none;
+}

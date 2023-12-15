@@ -1,0 +1,129 @@
+.tab-primary {
+    margin: 0 -18px;
+}
+.tab-content {
+    font-size: 15px;
+}
+.tab-primary .tabs__content {
+    margin: 0 18px;
+}
+.tab-primary ul.tabs__labels {
+    border-bottom: 1px solid #ebebeb;
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 0 27px;
+    padding: 0;
+    width: 100%;
+}
+ul.tabs__labels li {
+    display: inline-block;
+    margin: 0 0 -1px 0;
+    position: relative;
+}
+.tab-primary ul.tabs__labels li a {
+    border-bottom: 3px solid transparent;
+    color: #000;
+    display: inline-block;
+    font-size: 15px;
+    min-width: 184px;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+.tab-primary ul.tabs__labels li a.active {
+    border-bottom-color: #019033;
+    color: #039035;
+    display: inline-block;
+}
+.tab-primary ul.tabs__labels li .active:after {
+    border: 5px solid transparent;
+    border-top: 5px solid #019033;
+    bottom: -10px;
+    content: '';
+    left: 50%;
+    margin-left: -5px;
+    position: absolute;
+}
+.tab-secondary ul.tabs__labels li .active:after {
+    display: none;
+}
+.tabs-name {
+    display: inline-block;
+    padding: 0 4px;
+    position: relative;
+}
+.tab-primary ul.tabs__labels li a:hover, .tab-primary ul.tabs__labels li a:focus {
+    border-color: #ffcb05;
+    outline: none;
+}
+.tab-primary ul.tabs__labels li a.active:hover, .tab-primary ul.tabs__labels li a.active:focus {
+    border-color: #019033;
+    outline: none;
+}
+.tab-primary ul.tabs__labels li a:hover .tabs-name, .tab-primary ul.tabs__labels li a:focus .tabs-name {
+    color: #039035;
+    text-decoration: underline;
+}
+.tabs-name .badge {
+    left: 100%;
+    top: -8px;
+}
+
+/*secondary*/
+.tab-secondary {
+    text-align: center;
+}
+.tab-secondary ul.tabs__labels {
+    border: 1px solid #027b2d;
+    border-radius: 2px;
+    display: inline-block;
+    padding: 0;
+    width: auto;
+}
+.tab-secondary .tabs__content {
+    margin: 0;
+    text-align: left;
+}
+.tab-secondary ul.tabs__labels li {
+    border-right: 1px solid #027b2e;
+    margin: 0;
+}
+.tab-secondary ul.tabs__labels li:last-child {
+     border-right: none;
+ }
+.tab-secondary ul.tabs__labels li a {
+    color: #039035;
+    border-bottom: none;
+    display: inline-block;
+    font-size: 15px;
+    min-width: inherit;
+    padding: 8px 43px;
+}
+.tab-secondary ul.tabs__labels li.tab-disabled a {
+    opacity: 0.5;
+}
+.tab-secondary ul.tabs__labels li a:hover, .tab-secondary ul.tabs__labels li a:focus {
+    background: #fff5db;
+    outline: none;
+}
+.tab-secondary ul.tabs__labels li.tab-disabled a:hover, .tab-secondary ul.tabs__labels li.tab-disabled a:focus {
+    background: none;
+}
+.tab-secondary ul.tabs__labels li a:hover span, .tab-secondary ul.tabs__labels li a:focus span {
+    text-decoration: underline;
+    outline: none;
+}
+.tab-secondary ul.tabs__labels li.tab-disabled a:hover span, .tab-secondary ul.tabs__labels li.tab-disabled a:focus span {
+    text-decoration: none;
+}
+.tab-secondary ul.tabs__labels li a.active:focus span {
+    color: #fff;
+}
+.tab-secondary ul.tabs__labels li a.active, .tab-secondary ul.tabs__labels li a.active:hover {
+    background-color: #029e44;
+    border-bottom: none;
+    color: #fff;
+}
+.tab-secondary ul.tabs__labels li a.active:hover .tabs-name {
+    color: #fff;
+}

@@ -1,0 +1,15 @@
+.ib-om-bold {
+  font-weight: bold;
+}
+
+.ib-om-italic {
+  font-style: italic;
+}
+
+.ib-om-underline {
+  text-decoration: underline;
+}
+
+.ib-om-line-through {
+  text-decoration: line-through;
+}

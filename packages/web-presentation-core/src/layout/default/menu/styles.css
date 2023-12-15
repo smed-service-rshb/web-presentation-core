@@ -1,0 +1,127 @@
+.main-menu-container {
+    background-color: #fff;
+    border-bottom: 1px solid #d7d7d7;
+    border-radius: 0;
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,0.08);
+    clear: both;
+    margin-bottom: 30px;
+    padding: 8px 0;
+}
+.main-menu-wrapper {
+    width: 1140px;
+    margin: 0 auto;
+}
+.header-logo {
+    display: inline-block;
+    margin: 0 15px 0 0;
+    vertical-align: top;
+    width: 171px;
+}
+.logo {
+    background: url(images/logo-rshb.png) 0 0 no-repeat;
+    height: 34px;
+    display: block;
+    margin-right: 18px;
+    width: 171px;
+}
+.main-menu {
+    display: inline-block;
+    font-size: 14px;
+    list-style: none;
+    margin: 0;
+    max-width: 940px;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.main-menu-item {
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    margin: 10px 0 10px 25px;
+    position: relative;
+    transition: linear 0.2s;
+}
+
+.main-menu-item.active:before {
+    background-color: #ffcd12;
+    content: '';
+    height: 5px;
+    position: absolute;
+    top: 25px;
+    width: 100%;
+}
+
+.main-menu-item:hover{
+    opacity: 0.8;
+}
+
+.main-menu-item .badge {
+    right: 6px;
+    top: 4px;
+}
+.left-menu-container {
+    display: inline-block;
+}
+.left-menu {
+    width: 180px;
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+}
+.left-menu-title {
+    border-bottom: 1px solid #d8d8d8;
+    color: #050b0b;
+    font-size: 15px;
+    padding: 10px 10px 10px 20px;
+    text-align: left;
+}
+
+.left-menu-content {
+    padding: 10px 0 5px 0;
+    border: none;
+    box-shadow: none;
+    list-style: none;
+    margin: 0;
+}
+.left-menu-link {
+    border-left: 3px solid transparent;
+    cursor: pointer;
+    font-size: 12.5px;
+    padding: 8px 5px 8px 19px;
+}
+.left-menu-item .left-menu-link.active {
+    background: #ebebeb;
+    border-left: 3px solid #1c8341;
+    color: #028a4b;
+}
+.left-menu-item .left-menu-link:hover {
+    background: #fff5db;
+    border-left-color: #f4f4f4;
+    color: #6ca01e;
+    text-decoration: underline;
+}
+.left-menu-item-disabled .left-menu-link:hover {
+    text-decoration: none;
+}
+.left-menu-item .left-menu-link.active:hover {
+    border-left-color: #1c8341;
+}
+.left-menu-item .left-menu-item-title:hover {
+    background: transparent;
+    color: #000;
+    text-decoration: none;
+}
+ul.left-menu-content .left-menu-link {
+    padding-left: 17px;
+}
+ul.left-menu-content ul .left-menu-link {
+    padding-left: 25px;
+}
+ul.left-menu-content ul ul .left-menu-link {
+    font-style: italic;
+    padding-left: 33px;
+}
+.left-menu-item-title {
+    cursor: default;
+}

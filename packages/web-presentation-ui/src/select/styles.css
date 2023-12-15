@@ -1,0 +1,93 @@
+.select-wrapper {
+    display: inline-block;
+    margin-top: -7px;
+    outline: none;
+    vertical-align: middle;
+    width: 100%;
+}
+.select-wrapper .Select-control {
+    border: 1px solid #e7e8ec;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 27px;
+}
+.select-wrapper .Select-control:hover {
+    box-shadow: none;
+}
+.select-wrapper:focus .Select-control, .select-wrapper .Select.is-focused .Select-control {
+    border: 1px solid #ffc208;
+    box-shadow: 0 0 2px rgba(235,189,16,0.65);
+    outline: none;
+}
+.select-wrapper .Select--single > .Select-control .Select-value {
+    color: #000;
+    font-size: 15px;
+    line-height: 27px;
+}
+.select-wrapper .Select-placeholder {
+    color: #888;
+    font-size: 15px;
+    line-height: 26px;
+}
+.select-wrapper .Select--single > .Select-control .Select-value {
+    overflow: hidden;
+    padding-right: 30px;
+    text-overflow: ellipsis;
+}
+.select-wrapper .Select-input > input {
+    padding: 5px 0 9px;
+}
+.select-wrapper .Select-input {
+    height: 27px;
+    overflow: hidden;
+    vertical-align: top;
+}
+.select-wrapper .Select-arrow-zone {
+    background: #fff url(icon/select_arrow.png) no-repeat 0 0;
+    padding: 0;
+    vertical-align: top;
+    width: 22px;
+}
+.select-wrapper .is-focused:not(.is-open) > .Select-control, .select-wrapper .is-open > .Select-control  {
+    border: 1px solid #e7e8ec;
+    box-shadow: none;
+}
+.select-wrapper .has-value.Select--single > .Select-control .Select-value .Select-value-label,
+.select-wrapper .has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {
+    color: #000;
+}
+
+.select-wrapper .Select-menu-outer {
+    border: 1px solid #e7e8ec;
+    border-radius: 0;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+    margin-top: -1px;
+    z-index: 999;
+}
+
+.select-wrapper .Select-option {
+    color: #000;
+}
+.select-wrapper .Select-option:last-child {
+    border-bottom: none;
+}
+.select-wrapper .Select-option.is-focused {
+    background-color: #fff5db;
+    color: #000;
+}
+.select-wrapper .Select-option.is-selected {
+    background: #fff5db;
+}
+
+.select-wrapper .Select-option:last-child {
+    border-radius: 0;
+}
+
+.searching-options {
+    max-height: 150px;
+}
+.select-wrapper .Select.is-focused .Select-control {
+    border: 1px solid #ffc208;
+    box-shadow: 0 0 2px rgba(235,189,16,0.65);
+    outline: none;
+}

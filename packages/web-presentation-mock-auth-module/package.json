@@ -1,0 +1,18 @@
+{
+  "name": "@efr/medservice-web-presentation-mock-auth-module",
+  "version": "15.0.2-smed",
+  "description": "Заглушечный модуль аутентификации",
+  "main": "src/index.js",
+  "devDependencies": {
+    "@efr/medservice-eslint-config-react": "^15.0.2-smed",
+    "@efr/medservice-web-presentation-core": "^15.0.2-smed",
+    "@efr/medservice-web-presentation-ui": "^15.0.2-smed",
+    "@efr/medservice-web-presentation-utils-mock": "^15.0.2-smed"
+  },
+  "scripts": {
+    "lint": "run-liter"
+  },
+  "publishConfig": {
+    "@efr:registry": "http://coral:18088/repository/efr-presentation-common/"
+  }
+}

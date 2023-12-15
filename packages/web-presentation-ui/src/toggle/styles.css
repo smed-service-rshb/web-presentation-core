@@ -1,0 +1,92 @@
+.toggle-target {
+    height: 17px;
+    margin: 0 3px 0 0;
+    opacity: 0;
+    vertical-align: top;
+    width: 17px;
+}
+label.toggle {
+    cursor: pointer;
+    display: inline-block;
+    height: 21px;
+    margin-top: -2px;
+    min-width: 46px;
+}
+.toggle-target + .toggleStyle {
+    cursor: pointer;
+    display: inline-block;
+    height: 21px;
+    min-width: 46px;
+}
+.toggle-target:not(checked) {
+    position: absolute;
+}
+.toggle-target:not(checked) + .toggleStyle {
+    position: relative;
+}
+.toggle-target:not(checked) + .toggleStyle:before {
+    background: #d6e0e8;
+    border: 1px solid #bccdd9;
+    border-radius: 2px;
+    content: '';
+    cursor: pointer;
+    height: 19px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 44px;
+}
+.toggle-target:not(checked) + .toggleStyle:after {
+    background: #fff;
+    border: 1px solid #c0d0db;
+    border-radius: 2px;
+    content: '';
+    cursor: pointer;
+    height: 17px;
+    left: 1px;
+    position: absolute;
+    top: 1px;
+    transition: all .2s;
+    width: 17px;
+}
+.toggle-target:checked + .toggleStyle:before {
+    background: #029e44;
+    border: 1px solid #029e44;
+}
+.toggle-target:checked + .toggleStyle:after {
+    border: 1px solid #027b2e;
+    left: 26px;
+}
+label.toggle span.toggleLabel {
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 11px;
+    margin-top: 0;
+    max-width: 530px;
+    vertical-align: top;
+}
+
+.toggle-target:focus + .toggleStyle:before {
+    border: 1px solid #ffc208;
+    box-shadow: 0 0 2px rgba(235,189,16,0.65);
+}
+
+/*toggle hint*/
+.toggleHint {
+    font-size: 10px;
+    line-height: normal;
+    position: absolute;
+    text-transform: uppercase;
+    top: 4px;
+}
+.toggleHint.agree {
+    color: #fff;
+    left: 7px;
+}
+.toggleHint.disagree {
+    color: #000;
+    right: 3px;
+}
+.toggle-target:disabled + .toggleStyle {
+    opacity: 0.6;
+}

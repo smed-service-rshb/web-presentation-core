@@ -1,0 +1,21 @@
+{
+  "name": "medservice-web-presentation-core",
+  "description": "Презентационный слой",
+  "private": true,
+  "devDependencies": {
+    "lerna": "2.2.0"
+  },
+  "scripts": {
+    "clean": "lerna clean --yes && rimraf node_modules || exit 0",
+    "postinstall": "lerna bootstrap --concurrency=1 --hoist",
+    "test": "node ./packages/react-test/bin/run-tests",
+    "lint": "lerna exec -- npm run lint",
+    "build": "cd packages/web-presentation-module-test && npm run build",
+    "docker-push": "cd packages/web-presentation-module-test && npm run docker-push",
+    "test-app:start:app": "cd packages/web-presentation-module-test && npm run start-app --",
+    "test-app:start:mock": "cd packages/web-presentation-module-test && npm run start-mock",
+    "test-app:analyze": "cd packages/web-presentation-module-test && npm run analyze-bundle",
+    "ui-app:start:sg": "cd packages/web-presentation-ui && npm run styleguide",
+    "publish": "lerna publish --force-publish=*"
+  }
+}

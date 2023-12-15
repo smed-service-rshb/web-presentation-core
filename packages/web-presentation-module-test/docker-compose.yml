@@ -1,0 +1,18 @@
+version: '2'
+services:
+
+  test-module-presentation:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    dns:
+      - 172.16.35.3
+      - 8.8.8.8
+    dns_search:
+      - softlab.ru
+      - rsvologda.local
+    env_file:
+      - .env
+      - .env.local
+    ports:
+      - "8888:80"

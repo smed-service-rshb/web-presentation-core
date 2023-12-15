@@ -1,0 +1,63 @@
+.checkbox {
+    height: 16px;
+    margin: 0 3px 0 0;
+    opacity: 0;
+    vertical-align: top;
+    width: 16px;
+}
+.checkbox-container {
+    cursor: pointer;
+    display: inline-block;
+    height: 16px;
+    min-width: 16px;
+}
+.checkbox + .checkbox-style {
+    cursor: pointer;
+    display: inline-block;
+    height: 16px;
+    vertical-align: top;
+    width: 16px;
+}
+.checkbox:not(checked) {
+    position: absolute;
+}
+.checkbox:not(checked) + .checkbox-style {
+    position: relative;
+}
+
+.checkbox:not(checked):focus + .checkbox-style:before {
+    background: url("icon/checkbox.png") no-repeat 0 -105px;
+}
+.checkbox:not(checked) + .checkbox-style:before {
+    background: url("icon/checkbox.png") no-repeat 0 -21px;
+    content: '';
+    cursor: pointer;
+    height: 16px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 16px;
+}
+.checkbox:checked + .checkbox-style:before {
+    background: url("icon/checkbox.png") no-repeat 0 0;
+    opacity: 1;
+}
+
+.checkbox:checked:focus + .checkbox-style:before {
+    background: url("icon/checkbox.png") no-repeat 0 -84px;
+}
+.checkbox:not(checked):disabled + .checkbox-style:before {
+    background-position: 0 -63px;
+    cursor: default;
+}
+.checkbox:checked:disabled + .checkbox-style:before {
+    background-position: 0 -42px;
+}
+label.checkbox-container span.checkbox-label {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 16px;
+    margin-left: 11px;
+    vertical-align: top;
+}
+

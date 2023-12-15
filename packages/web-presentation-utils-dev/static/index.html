@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    </head>
+    <body>
+        <div id="root" class="full-height"></div>
+    </body>
+    <script type="text/javascript">
+        var restSettings = {
+            protocol: "%EFR_BACKEND_PROTOCOL%",
+            host: "%EFR_BACKEND_HOST%",
+            port: %EFR_BACKEND_PORT%,
+            prefix: '%EFR_BACKEND_BASE_PATH%',
+            timeout: %EFR_BACKEND_TIMEOUT%
+        };
+        DevApp.render(document.getElementById('root'), restSettings)
+    </script>
+</html>

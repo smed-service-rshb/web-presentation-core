@@ -1,0 +1,32 @@
+{
+  "name": "@efr/medservice-eslint-config-react",
+  "version": "15.0.2-smed",
+  "description": "Инструмент проверки code rules.",
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "4.4.1",
+    "eslint-config-react-app": "2.0.0",
+    "eslint-loader": "1.9.0",
+    "eslint-plugin-flowtype": "2.35.0",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jsx-a11y": "6.0.2",
+    "eslint-plugin-react": "7.2.0"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "bin": {
+    "run-liter": "./bin/run-liter.js"
+  },
+  "files": [
+    "bin",
+    "index.js",
+    "README.md"
+  ],
+  "scripts": {
+    "lint": "node ./bin/run-liter"
+  },
+  "publishConfig": {
+    "@efr:registry": "http://coral:18088/repository/efr-presentation-common/"
+  }
+}

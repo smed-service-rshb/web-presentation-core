@@ -1,0 +1,12 @@
+.label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.label-secondary {
+    color: #333;
+}
+.label-primary {
+    color: #333;
+}

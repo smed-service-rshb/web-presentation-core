@@ -1,0 +1,32 @@
+.panel-wrapper{
+    border-radius: 4px;
+    font-size: 15px;
+    min-width: 800px;
+    margin-bottom: 30px;
+}
+.panel-wrapper:first-child {
+    margin-top: 0;
+}
+
+.panel-label {
+    color: #333;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 15px;
+}
+.panel-label-secondary {
+    border-bottom: 1px solid #e6e6e6;
+    color: #000;
+    display: block;
+    font-size: 24px;
+    margin: 0 0 15px;
+    padding-bottom: 13px;
+}
+
+.panel-right-text {
+    float: right;
+    font-size: 15px;
+    margin-left: 10px;
+    white-space: nowrap;
+}

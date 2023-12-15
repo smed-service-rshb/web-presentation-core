@@ -1,0 +1,55 @@
+{
+  "name": "@efr/medservice-web-presentation-utils-dev",
+  "version": "15.0.2-smed",
+  "description": "Утилитный модуль для отладки",
+  "main": "src/index.js",
+  "dependencies": {
+    "@efr/medservice-react-dependencies": "^15.0.2-smed",
+    "@efr/medservice-transpiler-dependencies": "^15.0.2-smed",
+    "@efr/medservice-web-presentation-core": "^15.0.2-smed",
+    "compression-webpack-plugin": "1.1.11",
+    "css-loader": "0.28.4",
+    "dotenv": "4.0.0",
+    "extract-text-webpack-plugin": "3.0.2",
+    "file-loader": "0.11.2",
+    "fs-extra": "4.0.2",
+    "html-webpack-plugin": "2.30.1",
+    "http-proxy-middleware": "0.18.0",
+    "morgan": "1.8.2",
+    "path": "0.12.7",
+    "react-dev-utils": "3.1.0",
+    "read-package-tree": "5.0.0",
+    "style-loader": "0.18.2",
+    "webpack": "3.5.2",
+    "webpack-bundle-analyzer": "2.13.1",
+    "webpack-dev-middleware": "1.12.0",
+    "webpack-hot-middleware": "2.18.2",
+    "webpack-merge": "4.1.3",
+    "yargs": "10.0.3"
+  },
+  "devDependencies": {
+    "@efr/medservice-eslint-config-react": "^15.0.2-smed"
+  },
+  "scripts": {
+    "lint": "run-liter"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "files": [
+    "bin",
+    "configs",
+    "src",
+    "static",
+    "scripts",
+    "mocks.config.js",
+    "README.md"
+  ],
+  "bin": {
+    "build-dev-app": "./bin/build-dev-app.js",
+    "start-dev-app": "./bin/start-dev-app.js"
+  },
+  "publishConfig": {
+    "@efr:registry": "http://coral:18088/repository/efr-presentation-common/"
+  }
+}
